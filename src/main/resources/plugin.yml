@@ -1,0 +1,5 @@
+name: NoAdminLogs
+version: '1.0.0'
+main: winlyps.noAdminLogs.NoAdminLogs
+api-version: '1.20'
+authors: [ Winlyps ]
