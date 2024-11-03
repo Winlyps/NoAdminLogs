@@ -14,6 +14,9 @@ class NoAdminLogs : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoAdminLogs plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("logAdminCommands", "true")
+            logger.info("NoAdminLogs plugin has been disabled.")
+        }
     }
 }
